@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A demonstration of HTML5 content structuring and form validation." />
+  <title>Enhanced HTML5 Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>HTML5 Content & Form Mastery</h1>
+    <p>This page showcases lists, tables, media, and a fully validated form.</p>
+  </header>
+
+  <main>
+    <!-- 📋 Lists Section -->
+    <section>
+      <h2>Features List</h2>
+      <ul>
+        <li>Semantic HTML5 structure</li>
+        <li>Accessible form design</li>
+        <li>Built-in validation</li>
+      </ul>
+    </section>
+
+    <!-- 📊 Table Section -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Week</th>
+            <th>Topic</th>
+            <th>Assignment</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HTML5 Basics</td>
+            <td>Intro Page</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Forms & Validation</td>
+            <td>Enhanced Form</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- 🎵 Media Section -->
+    <section>
+      <h2>Sample Media</h2>
+      <figure>
+        <img src="sample-image.jpg" alt="Sample visual content" width="300" />
+        <figcaption>Example of embedded image</figcaption>
+      </figure>
+
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <video controls width="320">
+        <source src="sample-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- 📝 Form Section -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required minlength="3" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="18" max="99" required />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required pattern=".{6,}" />
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">Select</option>
+            <option value="za">South Africa</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+          </select>
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." maxlength="300"></textarea>
+
+          <label>
+            <input type="checkbox" name="terms" required />
+            I agree to the terms and conditions
+          </label>
+
+          <input type="submit" value="Register" />
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Mastery Assignment</p>
+  </footer>
+
+</body>
+</html>
